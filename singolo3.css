@@ -1,0 +1,196 @@
+body {
+    margin: 0 auto;
+    font-size: 18px;
+    font-family: "Lato", "Arial", sans-serif;
+    color: #797f97;
+   
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+  
+  p {
+    margin: 0 0 10px;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+/*--  using styles --*/
+.wrapper {
+    width: 1020px;
+    background-color: #f06c64;
+    margin: auto;
+}
+
+.wrap {
+  max-width: 960px;
+  height: 655px;
+  border-bottom: 6px solid #ea676b;
+  margin: auto;
+}
+
+.nav-portfolio-row {
+  margin-left: 10px;
+  margin-bottom: 15px;
+}
+
+.portfolio-title {
+  font-size: 30px;
+line-height: 18px;
+height: 110px;
+color: #f0d8d9;
+font-family: "Lato";
+font-weight: 900;
+text-align: left;
+padding-top: 68px;
+
+ 
+}
+
+.portfolio-title-comment {
+  width: 940px;
+  height: 57px;
+  font-size: 18px;
+  line-height: 30px;
+  padding-top: 3px;
+  color: #f0d8d9;
+  font-family: "Lato";
+  font-weight: 300;
+  text-align: left;
+  
+}
+.contact-information {
+  text-align: left;
+}
+
+.form-main {
+  margin-top: 20px;
+  width: 620px;
+  margin-left: 10px;
+  display: inline-block;
+  vertical-align: top;
+}
+  
+
+.form {
+  display: block;
+  width: 619px;
+height: 38px;
+border-radius: 5px;
+background-color: #d6564f;
+border-style: none;
+margin: 15px auto 14px auto;
+font-size: 12px;
+line-height: 22px;
+color: #f48c8f;
+font-family: "Lato";
+font-weight: 400;
+text-align: left;
+padding-left: 12px;
+}
+.form-text-area {
+  font-size: 12px;
+  line-height: 22px;
+  height: 202px;
+  color: #f48c8f;
+  font-family: "Lato";
+  font-weight: 400;
+  text-align: left;
+  margin-top: 17px;
+  resize: none;
+}
+.info {
+  display: inline-block;
+  width: 300px;
+  padding-left: 16px;
+  padding-top: 33px;
+  
+}
+.info-title {
+  margin-bottom: 18px;
+}
+.info-title > p {
+  padding-top: 8px;
+  font-size: 12px;
+line-height: 22px;
+color: #f0d8d9;
+font-family: "Lato";
+font-weight: 400;
+text-align: justify;
+}
+
+.info-title > h3 {
+  font-size: 18px;
+  line-height: 18px;
+  color: #f0d8d9;
+  font-family: "Lato";
+  font-weight: 900;
+  text-align: left;
+}
+
+
+.contacts {
+  width: 320px;
+  height: 15px;
+  margin-top: 7px;
+ 
+  
+}
+.contacts > a {
+  text-decoration: none;
+  text-align: center;
+  
+}
+.contacts > a > div {
+    display: inline-block;
+    width: 10px;
+}
+.contacts > a > span {
+  font-size: 12px;
+line-height: 22px;
+color: #f0d8d9;
+font-family: "Lato";
+font-weight: 400;
+text-align: left;
+margin-left: 10px;
+} 
+
+
+
+
+/*.contacts a img {
+  display: inline;
+}
+/*
+.contact-information{
+  text-align: center;
+  
+}
+
+.form-main {
+  display: inline-block;
+  width: 620px;
+  height: 329px;
+  vertical-align: top;
+}
+.form{
+  display: block;
+ 
+}
+.info {
+  display: inline-block;
+  width: 300px;
+}
+
+*/

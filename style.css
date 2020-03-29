@@ -49,7 +49,24 @@ body {
     display: flex;
   }
  
+ /* ----         max width 1020px  ----  HEADER   -----    ----- */
   
+@media (max-width: 1020px)  {
+  .wrapper {
+    max-width: calc(100%);
+    
+  }
+  .container {
+    width: calc(100% - 80px);
+    margin: 0 auto;
+  }
+     
+
+
+
+
+}
+
   header {
     top: 0;
     position: sticky;
@@ -69,6 +86,8 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding-right: 5px;
+    padding-left: 15px
   }
 
   .header-logo-title {
@@ -87,7 +106,7 @@ body {
   }
   
   .header-navigation {
-    margin-top: 42px;
+    margin-top: 38px;
   }
   
   .nav-link {
@@ -120,6 +139,10 @@ body {
     margin: 0 13px 0 12px;
   }
  /* ---------------------------- SLIDER  ---------------------------------*/
+ 
+
+
+
 .slider__wrapper {
   height: 600px;
   padding: 0;
@@ -296,21 +319,94 @@ body {
     opacity: 0.5;
    
   }
-  @media (max-width: 960px){
-    .description {
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-  @media (max-width: 640px) {
-    .arrow{
-      display: none;
-    }
-    .project-name {
-      display: none;
-    }
-  }
+ 
 
+  /* ------   max width 1020px  SLIDER    -----*/
+  
+  
+@media (max-width: 1020px)  {
+  
+  .shadow-vertical {
+    position: absolute;
+    z-index: 10;
+    top: 40px;
+    left: 87px;
+    width: 184px;
+    background: url("assets/images/shadow-vertical.png") no-repeat;
+    background-size: contain;
+  }
+  
+  .base-vertical {
+    position: absolute;
+    z-index: 20;
+    top: 40px;
+    left: 86px;
+    width: 163px;
+   
+    background: url("assets/images/base-vertical.png") no-repeat;
+    background-size: contain;
+  
+  }
+  
+  .screen-vertical {
+    position: absolute;
+    z-index: 30;
+    top: 49px;
+    left: 11px;
+    width: 142px;
+    background: url("assets/images/screen-vertical.jpg") no-repeat;
+    background-size: contain;
+  
+  }
+  
+  .shadow-horizontal {
+    position: absolute;
+    z-index: 10;
+    top: 114px;
+    left: 299px;
+    width: 367px;
+    height: 240px;
+    background: url('assets/images/shadow-horizontal.png') no-repeat;
+    background-size: contain;
+  
+  }
+  
+  .base-horizontal {
+    position: absolute;
+    z-index: 20;
+    top: 135px;
+    left: 323px;
+    width: 345px;
+    height: 215px;
+    background: url('assets/images/base-horizontal.png') no-repeat;
+    background-size: contain;
+  
+  }
+  
+  .screen-horizontal {
+    position: absolute;
+    z-index: 30;
+    top: 10px;
+    left: 44px;
+    width: 252px;
+    height: 194px;
+    background: url('assets/images/screen-horizontal.jpg') no-repeat;
+    background-size: contain;
+  
+  }
+  .arrow-left {
+    left: 32px;
+}
+.arrow-right {
+  right: 17px;
+}
+.slide-2{
+  background-size: 100% 80%;
+}
+.slider__wrapper {
+  height: 451px;
+}
+}
 /* -- screen switcher------- */
 
  .screen_on {
@@ -420,6 +516,28 @@ body {
 
 .item-active {
   border: 5px solid #F06C64;
+}
+
+/*-------     max width 1020px  OUR SERVICE BLOCK     -------*/
+
+@media (max-width: 1020px)  {
+
+
+  .services-skills {
+    margin-left: 0;
+  }
+  .our-services-container-item {
+    width: 48%;
+    margin-left: 10px;
+  }
+  .icon-skill {
+    margin-right: 0;
+  }
+   .item-content {
+     padding: 22px;
+     height: 126px;
+   }
+
 }
 
 
@@ -599,6 +717,28 @@ body {
 .portfolio-nav-btn:hover {
     cursor: default;
 }
+ 
+
+/* -----------   max-width: 1020px  PORTFOLIO BLOCK ---- */
+
+
+@media (max-width: 1020px) {
+
+  .portfolio-title-comment {
+    margin-right: 50px;
+  }
+  .layout-4-column {
+    height: 824px;
+  }
+  .layout-4-column > img {
+    width: calc(30% - 9px);
+    margin: 5px 12px 15px 3px;
+  }
+}
+
+
+/* -------------------- */
+
 
 .about-us-container {
     background-color: #f2f2f2;
@@ -708,6 +848,41 @@ body {
   .socials-link:hover {
       background-color: #ced2df;
   }
+
+
+
+ /* ----  about us block ------ */
+
+
+
+  @media (max-width: 1020px) {
+   .about-us-container {
+    
+   }
+   .about-us-block {
+    padding-left: 27px;
+   }
+  .about-us-block-text{
+    margin: 18px 7px 11px 0;
+  }
+  .about-us-block-item {
+    margin: auto 0;
+  }
+  .about-us-block-item > img {
+    width: 216px;
+    height: auto;
+    margin: auto 7px 8px;
+  }
+  .about-us-block-description {
+    width: 218px;
+  }
+
+}
+
+
+/*----------  */
+
+
 
   .info-block-wrapper {
     background-color: #f06c64;
@@ -932,6 +1107,39 @@ body {
             transition-duration: .2s;
   }
 
+/*----------   form and contacts max width 1020  px ----*/
+
+
+  @media (max-width: 1020px) {
+    .form {
+      width: 445px;
+    }
+    .form-main{
+      width: 445px;
+      margin-left: 40px;
+    } 
+     .contact-info-comment {
+       width: auto;
+     }
+     .contact-info-title {
+       width: auto;
+     }
+     .section-contact-info-row {
+      width: calc(100% - 79px);
+     }
+     .info {
+      width: calc(32%);
+      padding-left: 24px;
+     }
+     .contacts {
+       width: auto;
+     }
+
+    }
+
+
+/*-------*/
+
   .footer-container {
     width: 1020px;
     background-color: #2d303a;
@@ -1003,5 +1211,43 @@ body {
     background-color: rgba(145, 146, 139, 0.2)
   }
 
+/* -----------   max width 1020  -  FOOTER
 
-  
+  @media (max-width: 1020px) {
+     .footer-container {
+       width: calc(100%);
+     }
+
+     .footer {
+       width: inherit;
+     }
+     .wrap-socials {
+      margin-left: calc(58%);
+     }
+      .footer-copyright {
+        margin-left: calc(4%);
+
+      }
+
+
+
+  */
+
+
+/*----------------------   SWIPER
+  @media (max-width: 960px){
+    .description {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  @media (max-width: 640px) {
+    .arrow{
+      display: none;
+    }
+    .project-name {
+      display: none;
+    }
+  }
+*/
+

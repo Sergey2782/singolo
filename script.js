@@ -84,13 +84,20 @@ for(let i =0; i< imgs.length; i++) {
 function activeItem(){
   this.classList.toggle('item-active');
 } 
+
 // PORTFOLIO BLOCK - shuffle images
-let portfolio_btn_s = document.querySelectorAll('.portfolio-nav-btn');
+let portfolio_btn_s = document.querySelector('.portfolio__buttons');
 const galleryElement = document.querySelector(".layout-4-column");
 const picturesElements = document.querySelectorAll(".gallery__picture");
-for(let i =0; i< portfolio_btn_s.length; i++) {
-  portfolio_btn_s[i].onclick = reorderPictures;
-};
+
+portfolio_btn_s.addEventListener("click", event => {
+  if (event.target.classList.contains("portfolio__button")) {
+    event.preventDefault(); 
+    reorderPictures();
+  }
+}
+)
+
 function reorderPictures() {
   const firstPicture = galleryElement.children[0];
   const firstPictureCopy = firstPicture.cloneNode();

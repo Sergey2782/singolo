@@ -97,3 +97,48 @@ function reorderPictures() {
   firstPicture.remove();
   galleryElement.append(firstPictureCopy);
 }
+
+
+// FORM
+
+let BTN_submit = document.querySelector('.form_btn');
+
+BTN_submit.addEventListener("click", event => {
+     event.preventDefault();
+
+     let form_name = document.querySelector('.form_name').value;
+     let form_mail = document.querySelector('.form_mail').value;
+     let form_subject = document.querySelector('.form_subject').value;
+     let form_text_area = document.querySelector('.form_text_area').value; 
+     
+     let check_mail = /.+@.+\..+/i.test(form_mail);
+
+     if(form_name == ''){
+
+        alert('Enter empty strings');
+
+     }else if(check_mail != true){
+
+      alert( `Enter a valid email address. Enter @ , mail-service and point` );
+
+     }
+     else if(form_subject && form_text_area){
+
+      alert( `The letter was sent \n Subject: ${form_subject}  \n Description: ${form_text_area}` );
+
+     }  else if (form_subject =='' && form_text_area ==''){
+
+      alert( `The letter was sent \n  No subject \n  No description `);
+     
+
+     } else if (form_subject ==''){
+
+      alert( `The letter was sent \n  No subject \n  Description: ${form_text_area}` );
+
+     } else if (form_text_area ==''){
+
+      alert( `The letter was sent \n Subject: ${form_subject} \n No description` );
+
+     }
+  }
+)
